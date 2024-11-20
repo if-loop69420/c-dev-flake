@@ -4,6 +4,7 @@ mkShell {
   buildInputs = [ 
     pkg-config
     clang
+    valgrind
   ];
   nativeBuildInputs = [ ];
   shellHook = '' 
