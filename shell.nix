@@ -1,7 +1,10 @@
 { pkgs ? import <nixpkgs> { }}:
 with pkgs;
 mkShell {
-  buildInputs = [ ];
+  buildInputs = [ 
+    pkg-config
+    clang
+  ];
   nativeBuildInputs = [ ];
   shellHook = '' 
   
